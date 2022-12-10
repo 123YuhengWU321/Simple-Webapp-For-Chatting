@@ -1,0 +1,52 @@
+Export these files to the end of server.js for testing:
+cpen322.connect('http://52.43.220.29/cpen322/test-a5-server.js');
+cpen322.export(__filename, {
+    app
+});
+cpen322.export(__filename, {
+    messages
+});
+cpen322.export(__filename, {
+    chatrooms
+});
+cpen322.export(__filename, {
+    broker
+});
+cpen322.export(__filename, {
+    db
+});
+cpen322.export(__filename, {
+    messageBlockSize
+});
+
+cpen322.export(__filename, {
+    sessionManager
+});
+
+cpen322.export(__filename, {
+    isCorrectPassword
+});
+
+Add this to the beginning of the server for testing:
+const cpen322 = require('./tester.js')
+chatrooms = [];
+chatrooms[0] = {
+    id: new String("123"),
+    name: "Room 101",
+    image: "./client/assets/everyone-icon.png"
+};
+chatrooms[1] = {
+    id: new String("456"),
+    name: "Room 102",
+    image: "./client/assets/bibimbap.jpg"
+};
+chatrooms[2] = {
+    id: new String("789"),
+    name: "Room 103",
+    image: "./client/assets/canucks.png"
+};
+chatrooms[3] = {
+    id: new String("246"),
+    name: "Room 104",
+    image: "./client/assets/minecraft.jpg"
+};

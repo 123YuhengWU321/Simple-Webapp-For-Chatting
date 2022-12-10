@@ -1,0 +1,21 @@
+Add these to the beginning of app.js:
+
+let profile = {}
+let Service = {};
+
+
+Add these to the end of the main function in app.js:
+ cpen322.export(arguments.callee, {
+        renderRoute,
+        lobbyView,
+        chatView,
+        profileView,
+        Room,
+        lobby
+    });
+    cpen322.export(arguments.callee, {
+        refreshLobby
+    });
+    cpen322.export(arguments.callee, {
+        socket
+    });

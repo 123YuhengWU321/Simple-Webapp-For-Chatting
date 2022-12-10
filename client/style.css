@@ -1,0 +1,124 @@
+
+a {
+    text-decoration: none;
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+body{
+	font-family: "Noto Sans JP", sans-serif;
+	margin: 0;
+	/*line-height: 1.6; */
+}
+
+#app-menu{
+  overflow: hidden;
+  background-color: rgb(39, 24, 151);
+  top: 0; /*Position the navbar at the top of the page */
+  width: 100%; 
+  display: flex;
+  justify-content:space-around;
+}
+
+ul#app-menu li{
+	width: 50%;
+}
+
+/* ul#app-menu li:hover{
+	background-color: yellow;
+  } */
+
+ul#app-menu li{
+	list-style-type: none;
+}
+
+.room-list li{
+	list-style-type: none;
+}
+
+li.menu-item:hover{
+    background-color: rgb(34, 253, 0);
+    color: rgb(237, 4, 213);
+}
+.room-list{
+	text-align: left;
+}
+.room-list div:hover{
+	background-color: rgb(34, 253, 0);
+}
+.room-list div{
+	left: 0%;
+	width: 100%;
+	background-color: rgb(149, 29, 190);
+	display: inline-block;
+}
+
+.message{
+	left: auto;
+	background-color: blueviolet;
+	width: 300px;
+
+}
+
+.my-message{
+	margin-left: auto;
+	margin-right: 0;
+	background-color: brown;
+	width: 300px;
+	/* float: right; */
+
+}
+
+/* .chat-icon{
+	text-align: center;
+	font-size: large;
+	color: white;
+
+}
+.chat-icon:hover{
+	background-color: green;
+} */
+
+
+
+.message-list {
+    position: absolute;
+    overflow: auto;
+	height: 250px;
+	width: 100px;
+	padding: 1%;
+	background-color: rgb(165, 42, 122);
+}  
+
+
+
+
+
+/* .menuItem{
+	background-color: #ebebeb;
+	width: 100%;
+	height: 50px;
+	font-size: 25px;
+	line-height:50px;
+	list-style-type: none;
+ } */
+
+ @media only screen and (min-width: 1024px) {
+	#app-view{
+		width: 80%;
+	}
+  }
+
+ @media (min-width:768px) and (max-width:1024px) {
+	#app-view{
+		width: 90%;
+	}
+  }
+
+  @media only screen and(max-width: 768px) {
+	#app-view{
+		width: 100%;
+	}
+  }
